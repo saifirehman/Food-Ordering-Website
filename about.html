@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickEats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"
+        integrity="sha512-oHBLR38hkpOtf4dW75gdfO7VhEKg2fsitvHZYHZjObc4BPKou2PGenyxA5ZJ8CCqWytBx5wpiSqwVEBy84b7tw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <i id="menu" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="brandLogo">QuickEats</div>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="navButtons">
+                <button class="btn loginBtn"><a href="/"> Login</a></button>
+                <button class="btn signupBtn"><a href="/">Signup</a></button>
+            </div>
+        </nav>
+        <section class="about">
+            <h1><span id="aboutIntro"></span></h1>
+            <div class="aboutIntro">
+                <p>QuickEats is not just a food delivery service; it's a community of food lovers who believe in the
+                    magic of a good meal. We are dedicated to bringing you a wide array of dishes that are not only
+                    delicious but also delivered with care and efficiency.</p>
+            </div>
+
+            <div class="mission">
+                <h1><span id="mission"></span></h1>
+                <p>At QuickEats, our mission is to revolutionize the food delivery experience by combining convenience,
+                    quality, and excellent customer service. We aim to provide meals that are not only delicious but
+                    also prepared with the freshest ingredients and delivered promptly to your doorstep.</p>
+            </div>
+            <div class="commitment">
+                <h1><span id="commitment"></span></h1>
+                <p>At QuickEats, customer satisfaction is our top priority. We strive to provide excellent service and
+                    delicious meals that you can enjoy at home. Our commitment to quality, innovation, and customer care
+                    is at the heart of everything we do. Join us in our journey to make food delivery a delightful and
+                    convenient experience.</p>
+            </div>
+            <div class="value">
+                <h1><span id="value"></span></h1>
+                <p>We understand the value of your time, which is why our streamlined delivery process ensures that your
+                    food arrives quickly without compromising on quality. Our menu is designed to cater to diverse
+                    tastes, offering a wide range of options from different cuisines. Our friendly and responsive
+                    customer service team is always ready to assist you with any questions or concerns.</p>
+            </div>
+        </section>
+        <div class="imgCover"></div>
+
+    </header>
+    <footer>
+        <div class="footerSocial">
+            <a href="https://linkedin.com/in/sahifa-zahra-4a2a1a2a1" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sahifa.zahra?igsh=MWR6aHZ1c2ZzMGFxcg==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sahifa.zehra.7?mibextid=kFxxJD" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:sahifazahra1@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 QuickEats. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#aboutIntro', {
+            strings: ['Welcome to QuickEats', 'About QuickEats'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#mission', {
+            strings: ['Our Mission'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#value', {
+            strings: ['Why Choose QuickEats?'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#commitment', {
+            strings: ['Our Commitment to You'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

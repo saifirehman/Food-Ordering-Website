@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickEats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"
+        integrity="sha512-oHBLR38hkpOtf4dW75gdfO7VhEKg2fsitvHZYHZjObc4BPKou2PGenyxA5ZJ8CCqWytBx5wpiSqwVEBy84b7tw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <i id="menu" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="brandLogo">QuickEats</div>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="navButtons">
+                <button class="btn loginBtn"><a href="/"> Login</a></button>
+                <button class="btn signupBtn"><a href="/">Signup</a></button>
+            </div>
+        </nav>
+        <section class="contactSection">
+            <h2><span id="contact"></span></h2>
+            <h4>We’re here to answer any questions you may have about QuickEats. Reach out to us and we’ll respond as
+                soon as we can.</h4>
+            <form id="contactForm" class="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="Contactmessage" cols="50" rows="3" placeholder="Your Message" required></textarea>
+                <button class="contact-btn" type="submit">SUBMIT</button>
+            </form>
+            <p id="contactMessageSubmision">Your message has been submitted. Thank you!</p>
+        </section>
+        <div class="imgCover"></div>
+
+    </header>
+    <footer>
+        <div class="footerSocial">
+            <a href="https://linkedin.com/in/sahifa-zahra-4a2a1a2a1" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sahifa.zahra?igsh=MWR6aHZ1c2ZzMGFxcg==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sahifa.zehra.7?mibextid=kFxxJD" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:sahifazahra1@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 QuickEats. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#contact', {
+            strings: ['Have Questions?', 'Contact Us!'],
+            typeSpeed: 50,
+        });
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            document.getElementById('contactMessageSubmision').style.display = 'block';
+
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('Contactmessage').value = '';
+
+            setTimeout(function () {
+                document.getElementById('contactMessageSubmision').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+
+</body>
+
+</html>
